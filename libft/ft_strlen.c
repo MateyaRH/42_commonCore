@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 16:45:55 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/09 18:12:09 by mremenar         ###   ########.fr       */
+/*   Created: 2023/10/09 17:54:00 by mremenar          #+#    #+#             */
+/*   Updated: 2023/10/09 18:11:51 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-int ft_isalpha(int c);
+int	ft_strlen(const char *s)
+{
+	int	i;
 
-int	ft_isdigit(int c);
+	i = 0;
+	while(s[i] != 0)
+		i++;
+	return (i);
+}
+/*
+#include <stdio.h>
 
-int	ft_isalnum(int c);
-
-int	ft_isascii(int c);
-
-int	ft_isprint(int c);
-
-int	ft_strlen(const char *s);
-
-#endif
+int main(void)
+{
+	char str[10] = "Ecole 42";
+	
+	printf("Size is %i characters./n", ft_strlen(str));
+}
+*/
