@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 17:54:00 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/09 18:11:51 by mremenar         ###   ########.fr       */
+/*   Created: 2023/10/10 10:28:20 by mremenar          #+#    #+#             */
+/*   Updated: 2023/10/10 10:28:20 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+void	*ft_memset(void *str, int c, unsigned long n)
 {
 	int	i;
 
 	i = 0;
-	while(s[i] != 0)
-		i++;
-	return (i);
+	while(n--)
+		((unsigned char*)str)[i++] = c;
+	return (str);
 }
 /*
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
 	char str[10] = "Ecole 42";
 	
-	printf("Size is %i characters.\n", ft_strlen(str));
+	printf("Result: %s\n", (unsigned char*)memset(str, 'A', 5));
+	printf("Result: %s\n", (unsigned char*)ft_memset(str, 'A', 5));
 }
 */

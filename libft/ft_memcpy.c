@@ -1,33 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 17:54:00 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/09 18:11:51 by mremenar         ###   ########.fr       */
+/*   Created: 2023/10/10 15:00:14 by mremenar          #+#    #+#             */
+/*   Updated: 2023/10/10 15:00:14 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-int	ft_strlen(const char *s)
+void	*ft_memcpy(void *dest, const void *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while(s[i] != 0)
+	while(i < n)
+	{
+		((unsigned char*)dest)[i] = ((unsigned char*)src)[i];
+		printf("Dest: %s\n", (unsigned char*)dest);
 		i++;
-	return (i);
+	}
+	return (dest);
 }
-/*
+
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-	char str[10] = "Ecole 42";
+	const char str1[100] = "Ecole 45259";
+	char str2[10] = "SKOOL 42";
+	char str3[10] = "SKOOL 42";
 	
-	printf("Size is %i characters.\n", ft_strlen(str));
+	printf("Result: %s\n", (unsigned char*)memcpy(str2, str1, 9));
+	printf("Result: %s\n", (unsigned char*)ft_memcpy(str3, str1, 9));
 }
-*/

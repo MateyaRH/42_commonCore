@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 17:54:00 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/09 18:11:51 by mremenar         ###   ########.fr       */
+/*   Created: 2023/10/10 13:55:44 by mremenar          #+#    #+#             */
+/*   Updated: 2023/10/10 13:55:44 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+void	ft_bzero(void *s, unsigned long n)
 {
-	int	i;
+	unsigned long	i;
 
 	i = 0;
-	while(s[i] != 0)
+	while(i < n)
+	{
+		((unsigned char*)s)[i] = 0;
 		i++;
-	return (i);
+	}
 }
 /*
 #include <stdio.h>
 
 int main(void)
 {
-	char str[10] = "Ecole 42";
+	char str2[10] = "Ecole";
+
+	ft_bzero(str2, 3);
 	
-	printf("Size is %i characters.\n", ft_strlen(str));
+	printf("Result: %s\n", str2);
 }
 */
