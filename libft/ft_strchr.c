@@ -1,33 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 15:21:47 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 10:31:52 by mremenar         ###   ########.fr       */
+/*   Created: 2023/10/11 17:31:46 by mremenar          #+#    #+#             */
+/*   Updated: 2023/10/11 17:44:40 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	return (c >= '0' && c <= '9');
+	int	i;
+	char *p;
+
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	p = &s[i];
+	return (p);
 }
 
-/*
 #include <stdio.h>
+#include <string.h>
+
 int main(void)
 {
-	unsigned char d;
-
-	d = 5;
-	if (ft_isdigit(d) == 1)
-		printf("Is digit!");
-	else
-		printf("Isn't digit!");
-	return (0);     
+	//const char str1[100] = "Ecole 42 !";
+	char str2[100] = "SKOOL 42";
+	char str3[100] = "SKOOL 42";
+	
+	printf("Result: %s\n", strchr(str2, 'O'));
+	printf("Dest1: %s\n", str2);
+	printf("Result: %s\n", ft_strchr(str3, 'O'));
+	printf("Dest2: %s\n", str3);
 }
-*/

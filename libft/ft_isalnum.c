@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:21:49 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/09 17:05:45 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/11 10:31:29 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	return((ft_isalpha(c) > 0) || (ft_isdigit(c) > 0));
+	return ((ft_isalpha(c) > 0) || (ft_isdigit(c) > 0));
 }
 /*
 #include <stdio.h>

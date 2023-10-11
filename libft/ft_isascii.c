@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 17:13:51 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/09 17:28:45 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/11 10:31:47 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	return(c >= 0 && c <= 127);
+	return (c >= 0 && c <= 127);
 }
 /*
 #include <stdio.h>
