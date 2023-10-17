@@ -1,51 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/12 09:54:28 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/16 10:39:08 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/16 11:06:17 by codespace         #+#    #+#             */
+/*   Updated: 2023/10/16 11:58:17 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int i;
-	int l;
-	
-	l = ft_strlen(s);
-	s += l;
-	i = 0;
-	while (*s != c && i++ <= l)
-		s--;
-	if (*s == c)
-		return ((char *)s);
+	while (n-- && *(unsigned char *)s != c)
+		s++;
+	if (*(unsigned char *)s == c)
+		return ((unsigned char *)s);
 	return (0);
-		
-/*	int	i;
-
-	i = 0;
-	while(s[i])
-	{
-		while (s[i] == c && s[i])
-		{
-			s += i;
-			i = 1;
-			while (s[i] && s[i] != c)
-				i++;
-		}
-		i++;
-	}
-	if (c == 0)
-		s += i;
-	if (*s == c)
-		return ((char *)s);
-	return (0);
-	*/
 }
 
 #include <stdio.h>
@@ -57,8 +30,8 @@ int main(void)
 	char str2[100] = "SKOOL 42";
 	char str3[100] = "SKOOL 42";
 	
-	printf("Result: %s\n", strrchr(str2, 'M'));
-//	printf("Dest1: %s\n", str2);
-	printf("Result: %s\n", ft_strrchr(str3, 'M'));
-//	printf("Dest2: %s\n", str3);
+	printf("Result: %s\n", (unsigned char *)memchr(str2, 'M', 15));
+	printf("Dest1: %s\n", str2);
+	printf("Result: %s\n", (unsigned char *)ft_memchr(str3, 'M', 15));
+	printf("Dest2: %s\n", str3);
 }
