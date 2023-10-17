@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 10:55:50 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/16 12:08:08 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/17 15:57:18 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -40,3 +40,4 @@ int	main(void)
 	printf("%d\n", strncmp(s1, s2, n));
 	printf("%d\n", ft_strncmp(s1, s2, n));
 }
+*/
