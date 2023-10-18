@@ -3,12 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 17:54:00 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 10:32:18 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:40:27 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: find length of string
+**
+** DESCRIPTION:
+** 		The strlen() function computes the length of the string s.
+*/
 
 #include "libft.h"
 

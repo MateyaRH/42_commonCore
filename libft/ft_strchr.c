@@ -3,12 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:31:46 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/17 15:57:41 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/18 14:53:08 by mremenar        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate character in string (first occurrence)
+**
+** DESCRIPTION:
+** 		The strchr() function locates the first occurrence of c (converted to a
+**	char) in the string pointed to by s.  The terminating null character is
+**	considered to be part of the string; therefore if c is `\0', the func-
+**	tions locate the terminating `\0'.
+*/
 
 #include "libft.h"
 

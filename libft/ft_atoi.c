@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 09:38:57 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/18 13:37:23 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/18 09:38:57 by mremenar         #+#    #+#             */
+/*   Updated: 2023/10/18 13:37:23 by mremenar        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <stdlib.h>
+** SYNOPSIS: convert ASCII string to integer
+**
+** DESCRIPTION:
+** 		The atoi() function converts the initial portion of the string pointed
+**	to by str to int representation.
+*/
 
 #include "libft.h"
 

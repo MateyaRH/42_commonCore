@@ -3,12 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 13:26:43 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 15:13:14 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:39:49 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: size-bounded string concatenation
+**
+** DESCRIPTION:
+** 		The strlcpy() and strlcat() functions copy and concatenate strings
+**	respectively.  They are designed to be safer, more consistent, and less
+**	error prone replacements for strncpy(3) and strncat(3).  Unlike those
+**	functions, strlcpy() and strlcat() take the full size of the buffer (not
+**	just the length) and guarantee to NUL-terminate the result (as long as
+**	size is larger than 0 or, in the case of strlcat(), as long as there is
+**	at least one byte free in dst).  Note that you should include a byte for
+**	the NUL in size.  Also note that strlcpy() and strlcat() only operate on
+**	true ``C'' strings.  This means that for strlcpy() src must be NUL-termi-
+**	nated and for strlcat() both src and dst must be NUL-terminated.
+** 		The strlcat() function appends the NUL-terminated string src to the end
+**	of dst.  It will append at most size - strlen(dst) - 1 bytes, NUL-termi
+**	nating the result.
+*/
 
 #include "libft.h"
 

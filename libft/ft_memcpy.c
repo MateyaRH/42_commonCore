@@ -3,15 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:00:14 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 15:01:00 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:29:44 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: copy memory area
+**
+** DESCRIPTION:
+** 		The memcpy() function copies n bytes from memory area s2 to memory area
+**	s1.  If s1 and s2 overlap, behavior is undefined.  Applications in which
+**	s1 and s2 might overlap should use memmove(3) instead.
+*/
+
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

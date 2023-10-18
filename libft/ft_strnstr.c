@@ -3,15 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 12:40:12 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/18 09:38:14 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/16 12:40:12 by mremenar         #+#    #+#             */
+/*   Updated: 2023/10/18 09:38:14 by mremenar        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate a substring in a string (size-bounded)
+**
+** DESCRIPTION:
+** 		The strnstr() function locates the first occurrence of the null-termi-
+**	nated string s2 in the string s1, where not more than n characters are
+**	searched.  Characters that appear after a `\0' character are not
+**	searched.
+*/
+
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {

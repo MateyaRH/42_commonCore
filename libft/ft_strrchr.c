@@ -3,12 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 09:54:28 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/16 10:39:08 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/16 10:39:08 by mremenar        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate character in string (last occurence)
+**
+** DESCRIPTION:
+** 		The strrchr() function locates the last occurrence of c (converted to a
+**	char) in the string s.  If c is `\0', strrchr() locates the terminating
+**	`\0'.
+*/
+
 
 #include "libft.h"
 

@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 11:06:17 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/16 11:58:17 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/16 11:06:17 by mremenar         #+#    #+#             */
+/*   Updated: 2023/10/16 11:58:17 by mremenar        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate byte in byte string
+**
+** DESCRIPTION:
+** 		The memchr() function locates the first occurrence of c (converted to an
+**	unsigned char) in string s.
+*/
 
 #include "libft.h"
 

@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:28:20 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 14:59:55 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:30:19 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: write a byte to a byte string
+**
+** DESCRIPTION:
+** 		The memset() function writes n bytes of value c (converted to an
+**	unsigned char) to the string s.
+*/
 
 #include "libft.h"
 

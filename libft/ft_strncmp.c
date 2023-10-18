@@ -3,12 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 10:55:50 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/17 15:57:18 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/16 10:55:50 by mremenar         #+#    #+#             */
+/*   Updated: 2023/10/17 15:57:18 by mremenar        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: compare strings (size-bounded)
+**
+** DESCRIPTION:
+** 		The strcmp() and strncmp() functions lexicographically compare the null-
+**	terminated strings s1 and s2.
+** 		The strncmp() function compares not more than n characters.  Because
+**	strncmp() is designed for comparing strings rather than binary data,
+**	characters that appear after a `\0' character are not compared.
+*/
 
 #include "libft.h"
 

@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:21:49 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 10:31:29 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:26:40 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <ctype.h>
+** SYNOPSIS: alphanumeric character test
+**
+** DESCRIPTION:
+** 		The isalnum() function tests for any character for which isalpha(3) or
+**	isdigit(3) is true.
+*/
 
 #include "libft.h"
 

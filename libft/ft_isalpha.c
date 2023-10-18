@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:39:32 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 10:31:37 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:26:06 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <ctype.h>
+** SYNOPSIS: alphabetic character test
+**
+** DESCRIPTION:
+** 		The isalpha() function tests for any character for which isupper(3) or
+**	islower(3) is true.
+*/
 
 #include "libft.h"
 

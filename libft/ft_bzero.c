@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 13:55:44 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 15:01:31 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:30:36 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <strings.h>
+** SYNOPSIS: write zeroes to a byte string
+**
+** DESCRIPTION:
+** 		The bzero() function writes n zeroed bytes to the string s. If n is
+**	zero, bzero() does nothing.
+*/
 
 #include "libft.h"
 

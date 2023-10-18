@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 16:56:40 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 17:29:06 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:45:24 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <ctype.h>
+** SYNOPSIS: upper case to lower case letter conversion
+**
+** DESCRIPTION:
+** 		The tolower() function converts an upper-case letter to the
+**	corresponding lower-case letter.
+*/
 
 #include "libft.h"
 

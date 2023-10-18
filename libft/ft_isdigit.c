@@ -3,12 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 15:21:47 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/11 10:31:52 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:27:25 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <ctype.h>
+** SYNOPSIS: decimal-digit character test
+**
+** DESCRIPTION:
+** 		The isdigit() function tests for a decimal digit character.
+*/
 
 #include "libft.h"
 
