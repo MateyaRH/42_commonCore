@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:40:12 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/17 17:38:28 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/18 09:38:14 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -45,3 +45,4 @@ int	main(void)
 	printf("Result: %s\n", ft_strnstr(s2, s1, n));
 	//ft_strnstr(s2, s1, n);
 }
+*/
