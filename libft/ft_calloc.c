@@ -33,14 +33,14 @@ void	*ft_calloc(size_t count, size_t size)
 	tmp = malloc(i);
 	if (!tmp)
 		return NULL;
-	while (i >= 0)
+	while (i > 0)
 	{
 		tmp[i] = 0;
 		i--;
 	}
 	return tmp;
 }
-
+/*
 #include <stdio.h>
 
 int main(void) 
@@ -78,4 +78,4 @@ int main(void)
    free( b );
    
    return(0);
-}
+}*/

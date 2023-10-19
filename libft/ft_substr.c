@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:50:36 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/19 11:08:35 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/19 12:45:31 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char *dst;
 
 	len_s = ft_strlen(s);
-	if ((start + 1) > len_s)
-		return (ft_strdup(""));
+	if (start > len_s)
+		return (ft_calloc(1, 1));
 	if ((start + len) > len_s)
 		len = len_s - start;
 	if (!(dst = malloc(len + 1)) || !s)

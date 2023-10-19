@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:45:55 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/19 09:59:47 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/19 14:37:55 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 
 char	*ft_strtrim(char const *s1, char const *set);
 
+//char	**ft_split(char const *s, char c);
 
 #endif
