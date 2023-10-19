@@ -41,7 +41,7 @@ char	*ft_strdup(const char *s)
 	return tmp;
 }
 
-#include<stdio.h>
+/*#include<stdio.h>
 #include<string.h>
  
 int main()
@@ -57,4 +57,4 @@ int main()
 	free (target1);
 	free (target2);
     return 0;
-}
+}*/

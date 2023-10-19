@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 13:26:43 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/18 15:39:49 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/19 09:02:09 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len + src_len);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int main(void)
@@ -70,4 +70,4 @@ int main(void)
 	printf("Dest1: %s\n", str2);
 	printf("Result: %lu\n", ft_strlcat(str3, str1, 20));
 	printf("Dest2: %s\n", str3);
-}
+}*/
