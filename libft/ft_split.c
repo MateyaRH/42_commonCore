@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:05:05 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/19 18:15:23 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/20 08:32:18 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,9 @@ char	**ft_split(char const *s, char c)
 	char	**ret_arr;
 	
 	str = ft_strtrim(s, (const char *)&c);
+	printf("Trim : %s\n", str);
 	no_arr = count_strs(str, c);
+	printf("no_arr : %i\n", no_arr);
 	ret_arr = (char **)malloc((no_arr + 1) * sizeof(char*));
 	if (!ret_arr)
 		return (0);
@@ -50,7 +52,7 @@ char	**ft_split(char const *s, char c)
 
 int main(void)
 {
-	char *s = "2c";
+	char *s = "2c22hju2jh222";
 	char c = '2';
 	char **result = ft_split(s, c);
 	int i = 0;
@@ -76,43 +78,6 @@ static int	count_strs(char const *s, char c)
 	return (count);
 }
 
-/*static char	**ret_arr(char *s, char c, int no_arr)
-{
-	char	**arr;
-	int		i;
-	int		len;
-	int		p;
-	
-	arr = (char **)malloc((no_arr + 1) * sizeof(char*));
-	if (!arr)
-		return (0);
-	i = 0;
-	p = 0;
-	while (i < no_arr && s[p])
-	{
-		len = 0;
-		while (s[len] != c && s[len])
-			len++;
-		arr[i] = ft_substr(s, p, len);
-		if (!arr[i])
-			no_arr = 0;
-		p += len;
-		while (s[p] == c)
-			p++;
-		i++;
-	}
-	if (no_arr == 0)
-	{
-		while (i >= 0)
-		{
-			free(arr[i]);
-		}
-	}
-	arr[i] = 0;
-	free(s);
-	return (arr);
-}*/
-
 static char	**cpy_str(char *s, char c, int no_arr, char **arr)
 {
 	int		i;
@@ -123,9 +88,10 @@ static char	**cpy_str(char *s, char c, int no_arr, char **arr)
 	p = 0;
 	while (i < no_arr && s[p])
 	{
-		len = 0;
+		len = p;
 		while (s[len] != c && s[len])
 			len++;
+		len -= p;
 		arr[i] = ft_substr(s, p, len);
 		if (!arr[i])
 			no_arr = 0;
