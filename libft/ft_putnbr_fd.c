@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 14:47:08 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/23 16:29:28 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/23 16:41:33 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_putnbr_fd(0, 1);
 	return (0);
-}
+}*/
