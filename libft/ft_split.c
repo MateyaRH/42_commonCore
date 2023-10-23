@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:05:05 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/20 08:32:18 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/23 09:47:32 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	**ft_split(char const *s, char c)
 	int		no_arr;
 	char	**ret_arr;
 	
+	printf("split\n");
 	str = ft_strtrim(s, (const char *)&c);
 	printf("Trim : %s\n", str);
 	no_arr = count_strs(str, c);
@@ -44,15 +45,16 @@ char	**ft_split(char const *s, char c)
 	if (!ret_arr)
 		return (0);
 	ret_arr = cpy_str(str, c, no_arr, ret_arr);
+	printf("Str: %s\n", str);
 	free(str);
 	return (ret_arr);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
-	char *s = "2c22hju2jh222";
+	char *s = "h";
 	char c = '2';
 	char **result = ft_split(s, c);
 	int i = 0;
@@ -64,7 +66,7 @@ int main(void)
 		i++;
 	}
 }
-
+*/
 static int	count_strs(char const *s, char c)
 {
 	int    count;

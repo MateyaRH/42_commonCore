@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 09:59:53 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/19 16:31:35 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/23 09:36:41 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i_end;
 	char	*ret_str;
 
+	printf("strtrim\n");
 	i_start = 0;
 	i_end = ft_strlen(s1) - 1;
 	if (i_end < 0)
 		return (ft_calloc(1, 1));
+	printf("strtrim start: %i, end: %i\n", i_start, i_end);
 	while (s1[i_start] && ft_strchr(set, s1[i_start]))
 		i_start++;
 	while (s1[i_end] && ft_strchr(set, s1[i_end]))
-		i_end--;
+		i_end--;	
+	if ((i_end - i_start) < 0)
+		return (ft_calloc(1, 1));
+	//printf("strtrim start: %i, end: %i\n", i_start, i_end);
 	ret_str = ft_substr(s1, i_start, (size_t)(i_end - i_start + 1));
 	return (ret_str);
 }

@@ -1,41 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 15:21:47 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/23 10:02:56 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/23 11:19:34 by codespace         #+#    #+#             */
+/*   Updated: 2023/10/23 11:21:02 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** LIBRARY: <ctype.h>
-** SYNOPSIS: decimal-digit character test
-**
-** DESCRIPTION:
-** 		The isdigit() function tests for a decimal digit character.
-*/
-
 #include "libft.h"
 
-int	ft_isdigit(int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	return (c >= '0' && c <= '9');
+	
 }
-
-/*
-#include <stdio.h>
-int main(void)
-{
-	unsigned char d;
-
-	d = 5;
-	if (ft_isdigit(d) == 1)
-		printf("Is digit!");
-	else
-		printf("Isn't digit!");
-	return (0);     
-}
-*/
