@@ -28,12 +28,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i_end;
 	char	*ret_str;
 
-	printf("strtrim\n");
 	i_start = 0;
 	i_end = ft_strlen(s1) - 1;
 	if (i_end < 0)
 		return (ft_calloc(1, 1));
-	printf("strtrim start: %i, end: %i\n", i_start, i_end);
 	while (s1[i_start] && ft_strchr(set, s1[i_start]))
 		i_start++;
 	while (s1[i_end] && ft_strchr(set, s1[i_end]))
