@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:04:54 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/18 14:51:46 by mremenar        ###   ########.fr       */
+/*   Updated: 2023/10/18 14:51:46 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -50,4 +50,4 @@ int	main(void)
 	size_t n = 5;
 	printf("%d\n", memcmp(s1, s2, n));
 	printf("%d\n", ft_memcmp(s1, s2, n));
-}
+}*/

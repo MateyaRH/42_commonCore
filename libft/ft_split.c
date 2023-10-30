@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/19 13:05:05 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/23 09:47:32 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/19 13:05:05 by mremenar         #+#    #+#              */
+/*   Updated: 2023/10/23 09:47:32 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** LIBRARY: N/A
-** SYNOPSIS: split string, with specified character as delimiter, into an array
-**			of strings
+** SYNOPSIS: split string, with specified character as delimiter, into an
+**			array of strings
 **
 ** DESCRIPTION:
-** 		Allocates (with malloc(3)) and returns an array of strings obtained by
-**	splitting ’s’ using the character ’c’ as a delimiter. The array must be
-**	ended by a NULL pointer.
+** 		Allocates (with malloc(3)) and returns an array of strings
+**	obtained by splitting ’s’ using the character ’c’ as a delimiter.
+**	The array must be ended by a NULL pointer.
 */
 
 #include "libft.h"
@@ -35,13 +35,13 @@ char	**ft_split(char const *s, char c)
 	char	*str;
 	int		no_arr;
 	char	**ret_arr;
-	
+
 	printf("split\n");
 	str = ft_strtrim(s, (const char *)&c);
 	printf("Trim : %s\n", str);
 	no_arr = count_strs(str, c);
 	printf("no_arr : %i\n", no_arr);
-	ret_arr = (char **)malloc((no_arr + 1) * sizeof(char*));
+	ret_arr = (char **)malloc((no_arr + 1) * sizeof(char *));
 	if (!ret_arr)
 		return (0);
 	ret_arr = cpy_str(str, c, no_arr, ret_arr);
@@ -69,7 +69,7 @@ int main(void)
 */
 static int	count_strs(char const *s, char c)
 {
-	int    count;
+	int	count;
 
 	count = 1;
 	s = ft_strchr(s, c);
@@ -85,7 +85,7 @@ static char	**cpy_str(char *s, char c, int no_arr, char **arr)
 	int		i;
 	int		len;
 	int		p;
-	
+
 	i = 0;
 	p = 0;
 	while (i < no_arr && s[p])

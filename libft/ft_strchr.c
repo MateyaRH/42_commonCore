@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:31:46 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/18 14:53:08 by mremenar        ###   ########.fr       */
+/*   Updated: 2023/10/18 14:53:08 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strchr(const char *s, int c)
 	while (*s != 0 && *s != c)
 		s++;
 	if (*s == c)
-		return ((char*)s);
+		return ((char *)s);
 	return (0);
 }
 /*

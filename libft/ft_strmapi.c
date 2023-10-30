@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 11:19:34 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/23 13:47:03 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/23 11:19:34 by mremenar         #+#    #+#              */
+/*   Updated: 2023/10/23 13:47:03 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,9 @@
 
 #include "libft.h"
 
-/*static char upper(unsigned int i, char c);
-*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char 			*ret_str;
+	char			*ret_str;
 	unsigned int	len;
 	unsigned int	i;
 

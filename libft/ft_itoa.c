@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 09:49:23 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/23 15:12:59 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/23 09:49:23 by mremenar         #+#    #+#              */
+/*   Updated: 2023/10/23 15:12:59 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*ft_itoa(int n)
 static int	nbr_len(int n)
 {
 	int	len;
-	
+
 	len = 0;
 	if (n < 0)
 		len++;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 13:35:17 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/23 14:14:29 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/23 13:35:17 by mremenar         #+#    #+#              */
+/*   Updated: 2023/10/23 14:14:29 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 #include "libft.h"
 
-static void upper(unsigned int i, char *c);
+static void	upper(unsigned int i, char *c);
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

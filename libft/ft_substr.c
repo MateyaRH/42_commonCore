@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:50:36 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/23 09:26:56 by codespace        ###   ########.fr       */
+/*   Updated: 2023/10/23 09:26:56 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
-	unsigned int len_s;
-	char *dst;
+	unsigned int	len_s;
+	char			*dst;
 
 	printf("substr\n");
 	len_s = ft_strlen(s);
@@ -33,8 +33,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_calloc(1, 1));
 	if ((start + len) > len_s)
 		len = len_s - start;
-	if (!(dst = malloc(len + 1)) || !s)
-		return NULL;
+	dst = malloc(len + 1);
+	if (!dst || !s)
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{
@@ -43,7 +44,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		start++;
 	}
 	dst[i] = 0;
-	return dst;
+	return (dst);
 }
 
 /*#include <stdio.h>

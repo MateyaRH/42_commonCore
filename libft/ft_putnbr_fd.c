@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 14:47:08 by codespace         #+#    #+#             */
-/*   Updated: 2023/10/23 16:41:33 by codespace        ###   ########.fr       */
+/*   Created: 2023/10/23 14:47:08 by mremenar         #+#    #+#              */
+/*   Updated: 2023/10/23 16:41:33 by mremenar        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int digit;
-	
+	int	digit;
+
 	if (n < 0)
 	{
 		write(fd, "-", 1);
