@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:28:38 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/30 12:28:38 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/01 09:48:23 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *curr;
- 
+	t_list	*curr;
+
 	if (!(*lst))
 	{
 		*lst = new;
-		return;
+		return ;
 	}
 	curr = ft_lstlast(*lst);
 	curr->next = new;

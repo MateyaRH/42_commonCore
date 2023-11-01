@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:07:50 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/18 15:40:13 by mremenar        ###   ########.fr        */
+/*   Updated: 2023/11/01 14:34:56 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
-	i = 0;
-	while (i < (size - 1) && src[i])
+	if (dst && size)
 	{
-		dst[i] = src[i];
-		i++;
+		i = 0;
+		while (i < (size - 1) && src[i])
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+		while (src[i])
+			i++;
 	}
-	dst[i] = '\0';
-	while (src[i])
-		i++;
-	return (i);
+	return (ft_strlen(src));
 }
 /*
 #include <stdio.h>
@@ -52,13 +55,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 int main(void)
 {
-	const char str1[100] = "Ecole 42 !";
+	const char str1[100] = "";
 	char str2[10] = "SKOOL 42";
 	char str3[10] = "SKOOL 42";
 	
-	printf("Result: %lu\n", strlcpy(str2, str1, 10));
+	printf("Result: %lu\n", strlcpy(str2, str1, 0));
 	printf("Dest1: %s\n", str2);
-	printf("Result: %lu\n", ft_strlcpy(str3, str1, 10));
+	printf("Result: %lu\n", ft_strlcpy(str3, str1, 0));
 	printf("Dest2: %s\n", str3);
 }
 */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 12:40:12 by mremenar         #+#    #+#              */
-/*   Updated: 2023/10/18 09:38:14 by mremenar        ###   ########.fr        */
+/*   Created: 2023/10/16 12:40:12 by mremenar          #+#    #+#             */
+/*   Updated: 2023/11/01 16:43:13 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	len_s2 = ft_strlen(s2);
 	if (len_s2 == 0)
 		return ((char *)s1);
-	if (len_s2 > n)
+	if (len_s2 > n || !(ft_strlen(s1)))
 		return (0);
 	while (s1 && (len_s2 <= n))
 	{
-		if (ft_strncmp (s1, s2, n) == 0)
+		if (ft_strncmp (s1, s2, len_s2) == 0)
 			return ((char *)s1);
 		s1++;
 		n--;
@@ -48,11 +48,10 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 int	main(void)
 {
 
-	char s1[] = "";
-	char s2[] = "MTUu";
-	size_t n = 4;
-	//printf("%s\n", strnstr(s1, s2, n));
-	printf("Result: %s\n", ft_strnstr(s2, s1, n));
+	//char s1[] = "lorem ipsum dolor sit amet";
+	char s2[] = "ipsum";
+	size_t n = 15;
+	//printf("Result: %s\n", strnstr(((void *)0), s2, n));
+	printf("Result: %s\n", ft_strnstr(((void *)0), s2, n));
 	//ft_strnstr(s2, s1, n);
-}
-*/
+}*/

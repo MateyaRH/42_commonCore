@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/19 13:05:05 by mremenar         #+#    #+#              */
-/*   Updated: 2023/10/23 09:47:32 by mremenar        ###   ########.fr        */
+/*   Created: 2023/10/19 13:05:05 by mremenar          #+#    #+#             */
+/*   Updated: 2023/11/01 16:39:57 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,27 +36,23 @@ char	**ft_split(char const *s, char c)
 	int		no_arr;
 	char	**ret_arr;
 
-	printf("split\n");
 	str = ft_strtrim(s, (const char *)&c);
-	printf("Trim : %s\n", str);
 	no_arr = count_strs(str, c);
-	printf("no_arr : %i\n", no_arr);
 	ret_arr = (char **)malloc((no_arr + 1) * sizeof(char *));
 	if (!ret_arr)
 		return (0);
 	ret_arr = cpy_str(str, c, no_arr, ret_arr);
-	printf("Str: %s\n", str);
 	free(str);
 	return (ret_arr);
 }
-
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int main(void)
 {
-	char *s = "h";
-	char c = '2';
-	char **result = ft_split(s, c);
+	char *s = "tripouille";
+	//char c = 0;
+	char **result = ft_split(s, 0);
 	int i = 0;
 
 	while (result[i] != 0)
@@ -65,14 +61,16 @@ int main(void)
 		printf("\n");
 		i++;
 	}
-}
-*/
+}*/
+
 static int	count_strs(char const *s, char c)
 {
 	int	count;
 
 	count = 1;
 	s = ft_strchr(s, c);
+	if (!c)
+		return (count);
 	while (s && *s == c)
 		s++;
 	if (s && *s)

@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 11:36:59 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/30 11:36:59 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/01 10:07:36 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	n;
-	t_list *curr;
+	int		n;
+	t_list	*curr;
 
 	n = 0;
 	curr = lst;

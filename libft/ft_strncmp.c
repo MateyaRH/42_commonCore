@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 10:55:50 by mremenar         #+#    #+#              */
-/*   Updated: 2023/10/17 15:57:18 by mremenar        ###   ########.fr        */
+/*   Created: 2023/10/16 10:55:50 by mremenar          #+#    #+#             */
+/*   Updated: 2023/11/01 16:06:06 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,14 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	i = 0;
 	while (s1[i] && s2[i] && i < n)
 	{
-		if (s1[i] != s2[i])
+		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
 		{
-			return (s1[i] - s2[i]);
+			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 		}
 		i++;
 	}
+	if (i < n)
+		return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 	return (0);
 }
 /*
@@ -46,9 +48,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 int	main(void)
 {
 
-	char s1[] = "MTUu";
-	char s2[] = "MTbwuehf";
-	size_t n = 4;
+	char s1[] = "test";
+	char s2[] = "tests";
+	size_t n = 7;
 	printf("%d\n", strncmp(s1, s2, n));
 	printf("%d\n", ft_strncmp(s1, s2, n));
 }

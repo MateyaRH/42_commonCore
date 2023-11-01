@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 11:06:17 by mremenar         #+#    #+#              */
-/*   Updated: 2023/10/16 11:58:17 by mremenar        ###   ########.fr        */
+/*   Created: 2023/10/16 11:06:17 by mremenar          #+#    #+#             */
+/*   Updated: 2023/11/01 15:09:09 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	while (n-- && *(unsigned char *)s != c)
+	while (n-- && *(unsigned char *)s != (unsigned char)c)
 		s++;
-	if (*(unsigned char *)s == c)
+	if ((int)n >= 0 && *(unsigned char *)s == (unsigned char)c)
 		return ((unsigned char *)s);
 	return (0);
 }
@@ -35,12 +35,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int main(void)
 {
-	//const char str1[100] = "Ecole 42 !";
+	//const char str1[100] = "EcOle 42 !";
 	char str2[100] = "SKOOL 42";
 	char str3[100] = "SKOOL 42";
 	
-	printf("Result: %s\n", (unsigned char *)memchr(str2, 'M', 15));
+	printf("Result: %s\n", (unsigned char *)memchr(str2, 'O', 2));
 	printf("Dest1: %s\n", str2);
-	printf("Result: %s\n", (unsigned char *)ft_memchr(str3, 'M', 15));
+	printf("Result: %s\n", (unsigned char *)ft_memchr(str3, 'O', 2));
 	printf("Dest2: %s\n", str3);
 }*/

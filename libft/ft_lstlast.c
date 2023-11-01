@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:23:15 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/30 12:23:15 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/01 10:07:27 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list *curr;
+	t_list	*curr;
 
 	curr = lst;
 	if (!lst)
