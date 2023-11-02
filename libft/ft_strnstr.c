@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:40:12 by mremenar          #+#    #+#             */
-/*   Updated: 2023/11/02 10:03:48 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/02 17:59:32 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 		return ((char *)s1);
 	if (len_s2 > n || !(ft_strlen(s1)))
 		return (0);
-	while (s1 && (len_s2 <= n))
+	if (s1[0] == s2[0] && len_s2 == 1)
+		return ((char *)s1);
+	while (s1 && len_s2 <= n)
 	{
 		if (ft_strncmp (s1, s2, len_s2) == 0)
 			return ((char *)s1);
@@ -40,6 +42,26 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 		n--;
 	}
 	return (0);
+	/*size_t  i;
+        size_t  j;
+
+        i = 0;
+        if (to_find[0] == '\0')
+                return ((char *)str);
+        while (str[i] != '\0' && i < len)
+        {
+                j = 0;
+                while (to_find[j] == str[i + j] && (i + j) < len)
+                {
+                        if (to_find[j + 1] == '\0')
+                        {
+                                return ((char *)(str + i));
+                        }
+                        j++;
+                }
+                i++;
+        }
+        return (NULL);*/
 }
 /*
 #include <stdio.h>
