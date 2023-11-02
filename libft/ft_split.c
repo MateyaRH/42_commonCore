@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:05:05 by mremenar          #+#    #+#             */
-/*   Updated: 2023/11/01 16:39:57 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:21:04 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,23 @@ char	**ft_split(char const *s, char c)
 	char	*str;
 	int		no_arr;
 	char	**ret_arr;
+	char	set[2];
 
-	str = ft_strtrim(s, (const char *)&c);
+	set[0] = c;
+	set[1] = 0;
+	str = ft_strtrim(s, (const char *)set);
+	if (!str)
+		return (NULL);
 	no_arr = count_strs(str, c);
 	ret_arr = (char **)malloc((no_arr + 1) * sizeof(char *));
 	if (!ret_arr)
-		return (0);
+	{
+		free(str);
+		return (NULL);
+	}
 	ret_arr = cpy_str(str, c, no_arr, ret_arr);
-	free(str);
+	if (str)
+		free(str);
 	return (ret_arr);
 }
 /*
@@ -50,9 +59,9 @@ char	**ft_split(char const *s, char c)
 
 int main(void)
 {
-	char *s = "tripouille";
+	char *s = "hello!";
 	//char c = 0;
-	char **result = ft_split(s, 0);
+	char **result = ft_split(s, ' ');
 	int i = 0;
 
 	while (result[i] != 0)
@@ -96,13 +105,13 @@ static char	**cpy_str(char *s, char c, int no_arr, char **arr)
 		if (!arr[i])
 			no_arr = 0;
 		p += len;
-		while (s[p] == c)
+		while (s[p] == c && s[p])
 			p++;
 		i++;
 	}
 	arr[i] = 0;
 	if (no_arr == 0)
-		free_arr (arr, i);
+		free_arr (arr, i--);
 	return (arr);
 }
 
@@ -114,4 +123,5 @@ static void	free_arr(char **arr, int i)
 		i--;
 	}
 	free (arr);
+	arr = NULL;
 }

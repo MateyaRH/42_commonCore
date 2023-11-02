@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:12:21 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/30 14:12:21 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/02 17:22:28 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
+	tmp = *lst;
 	while (tmp)
 	{
 		tmp = (*lst)->next;
 		ft_lstdelone(*lst, del);
 		*lst = tmp;
 	}
-	*lst = NULL;
+	*lst = 0;
 }
 /*
 int main(void)

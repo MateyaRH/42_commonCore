@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:04:54 by mremenar          #+#    #+#             */
-/*   Updated: 2023/10/18 14:51:46 by mremenar        ###   ########.fr        */
+/*   Updated: 2023/11/02 16:50:07 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,13 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (i < n)
+	while (i < (int)n)
 	{
 		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
-		{
-			if ((((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]) < 0)
-				return (-1);
-			else
-				return (1);
-		}
+			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 		i++;
 	}
 	return (0);
@@ -45,9 +40,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int	main(void)
 {
-	char s1[] = "MTbw";
-	char s2[] = "MTbwuehf";
-	size_t n = 5;
+	char s1[] = "atoms\0\0\0\0";
+	char s2[] = "atoms\0abc";
+	size_t n = 8;
 	printf("%d\n", memcmp(s1, s2, n));
 	printf("%d\n", ft_memcmp(s1, s2, n));
 }*/
