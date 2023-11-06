@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 14:20:39 by mremenar         #+#    #+#              */
-/*   Updated: 2023/10/23 14:30:11 by mremenar        ###   ########.fr        */
+/*   Created: 2023/10/23 14:20:39 by mremenar          #+#    #+#             */
+/*   Updated: 2023/11/06 09:55:37 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mremenar <mremenar@student.42.fr>        +#+  +:+       +#+          */
+/*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 11:19:34 by mremenar         #+#    #+#              */
-/*   Updated: 2023/10/23 13:47:03 by mremenar        ###   ########.fr        */
+/*   Created: 2023/10/23 11:19:34 by mremenar          #+#    #+#             */
+/*   Updated: 2023/11/06 09:55:37 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
