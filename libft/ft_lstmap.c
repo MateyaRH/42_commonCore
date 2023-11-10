@@ -6,7 +6,7 @@
 /*   By: mremenar <mremenar@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 15:50:33 by mremenar          #+#    #+#             */
-/*   Updated: 2023/11/06 09:55:37 by mremenar         ###   ########.fr       */
+/*   Updated: 2023/11/10 10:33:02 by mremenar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!add_new)
 		{
 			ft_lstclear(&new_list, del);
+			new_list = NULL;
 			return (NULL);
 		}
 		ft_lstadd_back(&new_list, add_new);
