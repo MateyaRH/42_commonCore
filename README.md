@@ -1,6 +1,6 @@
 # 42 Common Core Projects
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/1200px-42_Logo.svg.png" alt="42 Logo" width="300">
+<img src="42_LausanneBanner.png" alt="42 Banner">
 
 
 Welcome to my repository showcasing the projects I completed as part of the 42 Common Core curriculum. This repository highlights my journey through École 42's innovative and rigorous approach to programming and problem-solving.
