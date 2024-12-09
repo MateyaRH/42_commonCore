@@ -13,7 +13,7 @@ Welcome to my repository showcasing the projects I completed as part of the 42 C
 
 This repository includes the following projects:
 
-1. **libft** - Custom implementation of the C standard library.
+1. [**libft**](https://github.com/MateyaRH/42_commonCore/tree/main/libft) - Custom implementation of the C standard library.
 2. **ft_printf** - Recreation of the `printf` function.
 3. **get_next_line** - Implementation of a function to read from a file descriptor.
 4. **Born2beroot** - System administration project focused on virtualization and security.
